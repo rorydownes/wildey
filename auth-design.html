@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Wildey - Setup</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "surface-tint": "#004ced",
+            "on-secondary-container": "#744800",
+            "error-container": "#ff8b9a",
+            "surface-container-high": "#dce9ff",
+            "on-secondary-fixed": "#5b3700",
+            "on-primary-fixed-variant": "#0049e6",
+            "inverse-on-surface": "#8e9eb7",
+            "on-secondary": "#fff7f3",
+            "tertiary-fixed": "#69f6b8",
+            "on-background": "#00345e",
+            "inverse-primary": "#6a89ff",
+            "surface-container": "#e5eeff",
+            "surface-container-lowest": "#ffffff",
+            "surface": "#f8f9ff",
+            "secondary-fixed": "#ffddb8",
+            "on-tertiary-fixed-variant": "#006544",
+            "primary-fixed-dim": "#cad2ff",
+            "surface-container-low": "#eff4ff",
+            "secondary-dim": "#764900",
+            "outline": "#477dbb",
+            "primary-container": "#dde1ff",
+            "on-error-container": "#782232",
+            "on-error": "#fff7f7",
+            "secondary": "#865400",
+            "secondary-fixed-dim": "#ffcb8e",
+            "on-primary-container": "#0041d0",
+            "error": "#9e3f4e",
+            "on-tertiary-fixed": "#00452d",
+            "error-dim": "#4f0116",
+            "inverse-surface": "#000f21",
+            "surface-dim": "#c4dcff",
+            "outline-variant": "#81b5f6",
+            "on-tertiary": "#e6ffee",
+            "primary-dim": "#0042d1",
+            "on-secondary-fixed-variant": "#815100",
+            "on-surface-variant": "#26619d",
+            "tertiary-dim": "#005f40",
+            "primary-fixed": "#dde1ff",
+            "on-primary": "#f8f7ff",
+            "tertiary-container": "#69f6b8",
+            "primary": "#004ced",
+            "tertiary-fixed-dim": "#58e7ab",
+            "surface-container-highest": "#d2e4ff",
+            "surface-variant": "#d2e4ff",
+            "tertiary": "#006d4a",
+            "on-primary-fixed": "#0032a5",
+            "surface-bright": "#f8f9ff",
+            "secondary-container": "#ffddb8",
+            "on-tertiary-container": "#005a3c",
+            "on-surface": "#00345e",
+            "background": "#f8f9ff"
+          },
+          fontFamily: {
+            "headline": ["Inter"],
+            "body": ["Inter"],
+            "label": ["Inter"]
+          },
+          borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+        },
+      },
+    }
+  </script>
+<style>
+    body { font-family: 'Inter', sans-serif; }
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    }
+    .glass-effect {
+      background: rgba(239, 244, 255, 0.8);
+      backdrop-filter: blur(20px);
+    }
+    .ghost-shadow {
+      box-shadow: 0 12px 40px rgba(0, 52, 94, 0.06);
+    }
+    .primary-gradient {
+      background: linear-gradient(135deg, #004ced 0%, #0042d1 100%);
+    }
+  </style>
+</head>
+<body class="bg-surface text-on-surface min-h-screen flex flex-col antialiased">
+<!-- Main Setup Canvas -->
+<main class="flex-grow flex items-center justify-center p-6 sm:p-12">
+<!-- Setup Card -->
+<div class="w-full max-w-[480px] bg-surface-container-lowest rounded-xl p-8 sm:p-12 ghost-shadow relative overflow-hidden">
+<!-- Asymmetrical Architectural Accent -->
+<div class="absolute top-0 left-0 w-1.5 h-16 bg-primary"></div>
+<!-- Identity Header -->
+<div class="mb-10">
+<h1 class="text-on-surface font-headline text-3xl font-extrabold tracking-tighter mb-2">Wildey</h1>
+<p class="text-on-surface-variant font-body text-lg leading-relaxed">
+          Connect your Gmail to get started
+        </p>
+</div>
+<!-- Content Section: Setup Flow (Initial State) -->
+<div class="space-y-8" id="setup-initial">
+<div class="space-y-4">
+<div class="flex items-start gap-4 group">
+<div class="mt-1 flex-shrink-0 w-8 h-8 rounded-full bg-surface-container-low flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[20px]" data-icon="shield_lock">shield_lock</span>
+</div>
+<div>
+<h3 class="text-on-surface font-semibold text-sm mb-1 uppercase tracking-wider">Local Data Privacy</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed">
+                Your credentials and application data are encrypted and stored locally. We never share your private inbox access with third parties.
+              </p>
+</div>
+</div>
+<div class="flex items-start gap-4 group">
+<div class="mt-1 flex-shrink-0 w-8 h-8 rounded-full bg-surface-container-low flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[20px]" data-icon="auto_awesome">auto_awesome</span>
+</div>
+<div>
+<h3 class="text-on-surface font-semibold text-sm mb-1 uppercase tracking-wider">Surgical Precision</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed">
+                Our algorithm scans only for relevant job application confirmations and interview invites from known recruitment domains.
+              </p>
+</div>
+</div>
+</div>
+<!-- Primary CTA -->
+<div class="pt-4">
+<button class="w-full primary-gradient text-on-primary py-4 px-6 rounded-lg font-semibold flex items-center justify-center gap-3 active:scale-[0.98] transition-all group shadow-md shadow-primary/10">
+<span class="material-symbols-outlined" data-icon="mail">mail</span>
+            Connect Gmail Account
+          </button>
+<p class="mt-6 text-center text-[10px] text-on-surface-variant/60 uppercase tracking-[0.15em] font-medium">Authorized by Wildey Standards</p>
+</div>
+</div>
+<!-- Content Section: Success State (Hidden by default, used for demonstration) -->
+<div class="hidden space-y-8 text-center py-4" id="setup-success">
+<div class="flex justify-center">
+<div class="w-20 h-20 rounded-full bg-tertiary-container flex items-center justify-center text-on-tertiary-container">
+<span class="material-symbols-outlined text-[48px]" data-icon="check_circle" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+</div>
+</div>
+<div class="space-y-2">
+<h2 class="text-2xl font-bold tracking-tight text-on-surface">Connection Successful</h2>
+<p class="text-on-surface-variant text-sm">
+            We've securely synced your career activity.
+          </p>
+</div>
+<div class="bg-surface-container-low p-4 rounded-lg flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded-full bg-surface-container-highest flex items-center justify-center overflow-hidden">
+<img alt="professional portrait of a man with short hair and a confident expression in a clean studio setting" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCnDM6ClOYhXw0iNBXU9TtZTrKdD3KRdtBzXjLm31cqZY8xHKkehYvkhV1feiqyTkCltY7Bf4XGJZumTAGarzITbjR4SrUhShu8nvZTcHEOzF5D-_iiOmR5sM2d62KZtjAgDQNnaDEMq4arl04cus0erJ6fSYBHQLQuAW0ks4cLJ-6lRlTwVy10CNtsnTyvU-wj_dJJQLXMh8O-6YlsuawqT75cY1D-cov3Cl4uhqFKrIQhw-W26L7HirvQUAt-vTi2mXACTWdH0ctf"/>
+</div>
+<div class="text-left">
+<p class="text-xs font-bold text-on-surface">alex.workflow@gmail.com</p>
+<p class="text-[10px] text-on-surface-variant uppercase tracking-tighter">Status: Active Syncing</p>
+</div>
+</div>
+<span class="material-symbols-outlined text-tertiary text-sm" data-icon="verified" style="font-variation-settings: 'FILL' 1;">verified</span>
+</div>
+<button class="w-full bg-on-surface text-surface py-4 px-6 rounded-lg font-semibold flex items-center justify-center gap-3 active:scale-[0.98] transition-all">
+          Continue to Dashboard
+          <span class="material-symbols-outlined" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- Decorative Aesthetic Background Elements -->
+<div class="fixed top-[-10%] right-[-5%] w-[40%] h-[40%] bg-surface-container-high rounded-full blur-[120px] -z-10 opacity-40"></div>
+<div class="fixed bottom-[-10%] left-[-5%] w-[30%] h-[30%] bg-primary-container rounded-full blur-[100px] -z-10 opacity-30"></div>
+</main>
+<!-- Shared Minimalist Footer -->
+<footer class="w-full fixed bottom-0 left-0 bg-surface/80 backdrop-blur-md border-t border-outline-variant/10 z-40 px-8 py-3">
+<div class="max-w-[1600px] mx-auto flex justify-between items-center">
+<div class="text-on-surface-variant/60 font-Inter text-[10px] uppercase tracking-widest">© 2024 Wildey Sync Status: Operational</div>
+<div class="flex gap-6">
+<a class="text-on-surface-variant/60 hover:text-primary transition-colors font-Inter text-[10px] uppercase tracking-widest" href="#">© 2024 Wildey Sync Status: Operational</a>
+<a class="text-on-surface-variant/60 hover:text-primary transition-colors font-Inter text-[10px] uppercase tracking-widest" href="#">© 2024 Wildey Sync Status: Operational</a>
+<a class="text-on-surface-variant/60 hover:text-primary transition-colors font-Inter text-[10px] uppercase tracking-widest" href="#">© 2024 Wildey Sync Status: Operational</a>
+</div>
+</div>
+</footer>
+<!-- Mockup Logic: For UI generation purposes only, normally would be JS -->
+<!-- Note: This is pure HTML/CSS layout as requested, but structured to support state visually -->
+</body></html>
